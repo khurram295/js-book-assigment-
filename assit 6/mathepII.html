@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>math rxpression II</title>
+</head>
+
+<body>
+  <script>
+    //    <---------------//  qno 01-------------> 
+    // var k =10;
+    // document.write("the value of a is "+k+"<br>");
+    // var k1=++k;
+    // document.write("the value of ++a is "+k1+"<br>");
+    // var k3=++k;
+    // document.write("the value of a++ is "+k3+"<br>");
+    // var k2=--k;
+    // document.write("the value of --a is "+k2+"<br>");
+
+    // var k4=--k;
+    // document.write("the value of a-- is "+k4+"<br>");
+
+    // <-----------------------q no 02----------------------->
+
+    //     var a = 10;
+    //     document.write("the value of a is " + a + "<br>");
+    //     var b = 20;
+    //     document.write("the value of a is " + b + "<br>");
+    //     var result = --a - --b + ++b + b--;
+    //    document.write("the value of a is " + result + "<br>");
+
+    // <---------------------------q no 03 ----------------------->
+
+    // var name = prompt("Please enter your name:");
+
+    // if (name !== null && name !== "") {
+
+    //   console.log("Hello baby dude " + name + " Nice to meet you.");
+    // } else {
+
+    //   console.log("Hello anononymous Nice to meet you.");
+    // }
+
+    // <----------------------------- q no 04----------------------------->
+
+// var number = prompt("Enter a number:");
+// if (number === "" || number === null) {
+//   number = 5;
+// }
+// var table = "<h2>Multiplication Table of " + number + "</h2>";
+// for (var i = 1; i <= 10; i++) {
+//   table += number + " x " + i + " = " + (number * i) + "<br>";
+// }
+// document.write(table);
+
+    
+
+
+
+    // <------------------qno 05----------------->
+
+var subject1 = prompt("Enter the name of subject 1:");
+var subject2 = prompt("Enter the name of subject 2:");
+var subject3 = prompt("Enter the name of subject 3:");
+
+var totalMarks = 100;
+
+var obtainedMarks1 = parseInt(prompt("Enter the obtained marks for subject 1:"));
+var obtainedMarks2 = parseInt(prompt("Enter the obtained marks for subject 2:"));
+var obtainedMarks3 = parseInt(prompt("Enter the obtained marks for subject 3:"));
+
+
+var totalObtainedMarks = obtainedMarks1 + obtainedMarks2 + obtainedMarks3;
+var percentage = (totalObtainedMarks / (totalMarks * 3)) * 100;
+
+
+var table = "<table>";
+table += "<tr><th>Subject</th><th>Total Marks</th><th>Obtained Marks</th></tr>";
+table += "<tr><td>" + subject1 + "</td><td>" + totalMarks + "</td><td>" + obtainedMarks1 + "</td></tr>";
+table += "<tr><td>" + subject2 + "</td><td>" + totalMarks + "</td><td>" + obtainedMarks2 + "</td></tr>";
+table += "<tr><td>" + subject3 + "</td><td>" + totalMarks + "</td><td>" + obtainedMarks3 + "</td></tr>";
+table += "<tr><th>Total</th><th>" + (totalMarks * 3) + "</th><th>" + totalObtainedMarks + "</th></tr>";
+table += "<tr><th>Percentage</th><th></th><th>" + percentage + "%</th></tr>";
+table += "</table>";
+document.write(table);
+
+
+
+
+  </script>
+
+</body>
+
+</html>
